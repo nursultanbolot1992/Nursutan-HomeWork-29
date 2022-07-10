@@ -82,15 +82,6 @@ final class Cat {
         });
     }
 
-    @Override
-    public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", breed=" + breed +
-                ", color=" + color +
-                '}';
-    }
 }
 
 /*********/

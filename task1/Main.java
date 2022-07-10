@@ -15,24 +15,26 @@ public class Main {
 
         // А сюда добавьте код, который будет сортировать коллекцию котов
         // используйте лямбда-выражения и ссылки на методы
-        Scanner scanner=new Scanner(System.in);
-        scanner.nextInt();
 
+
+        System.out.println(" Сортировка список по породе кота");
         cats.sort(Comparator.comparing(Cat::getBreed));
-        for (Cat c:cats) {
-            if (Cat.Breed.BRITAIN == Cat.Breed.BRITAIN) {
-                cats.remove(Cat.Breed.BRITAIN);
-            }
-        }
-            System.out.println(" Сортировка список по породе кота");
-        cats.sort(Comparator.comparing(Cat::getAge));
+
         Printer.print(cats);
         System.out.println("Сортировка список по имени и возрасту.");
-        cats.sort(Comparator.comparing(Cat::getName));
-
+        cats.sort(Comparator.comparing(Cat::getAge));
 
         Printer.print(cats);
-        System.out.println(" Сортировка список по породе кота");
+
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextInt();
+        System.out.println(" Сортировка список по имени кота");
+        cats.sort(Comparator.comparing(Cat::getName));
+        Printer.print(cats);
+        switch (Cat.Color.values().length) {
+
+        }
+
 
         Printer.print(cats);
 
@@ -58,7 +60,8 @@ public class Main {
 
             }
             if ((Cat.Color.TORTIE) == (Cat.Color.TORTIE)) {
-                cats.remove(Cat.Color.TABBY);
+                cats.remove(Cat.Color.TORTIE);
+
             }
         }
         System.out.println("Удаление из списка всех котов определенного цвета.");
